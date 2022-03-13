@@ -5,20 +5,20 @@
   Attiny 85 and based on whicn the digispark-tiny board is low-cost, most mini-size board that I like to use.
   digispark-tiny board is also named as "Digispark USB Development Board - Digistump"
   #### Specs:
-    - Support for the Arduino IDE 1.0+ (OSX/Win/Linux)
-    - Power via USB or External Source - 5v or 7-35v (12v or less recommended, automatic selection)
-    - On-board 500ma 5V Regulator
-    - Built-in USB
-    - 6 I/O Pins (2 are used for USB only if your program actively communicates over USB, otherwise you can use all 6 even if you are programming via USB)
-    - 8k Flash Memory (about 6k after bootloader)
-    - I2C and SPI (vis USI)
-    - PWM on 3 pins (more possible with Software PWM)
-    - ADC on 4 pins
-    - Power LED and Test/Status LED
+ - Support for the Arduino IDE 1.0+ (OSX/Win/Linux)
+ - Power via USB or External Source - 5v or 7-35v (12v or less recommended, automatic selection)
+ - On-board 500ma 5V Regulator
+ - Built-in USB
+ - 6 I/O Pins (2 are used for USB only if your program actively communicates over USB, otherwise you can use all 6 even if you are programming via USB)
+ - 8k Flash Memory (about 6k after bootloader)
+ - I2C and SPI (vis USI)
+ - PWM on 3 pins (more possible with Software PWM)
+ - ADC on 4 pins
+ - Power LED and Test/Status LED
   #### However:
-    - attiny85 has no hardware Serial, so #include <SPI.h> will not work.
-    - #include <Wire.h> looks work here.
-    - directly use "Serial.begin();" is not supported.
+ - attiny85 has no hardware Serial, so `#include <SPI.h>` will not work.
+ - `#include <Wire.h>` looks work here.
+ - directly use `Serial.begin();` is not supported.
 
 # How to use this library
   
@@ -29,12 +29,13 @@
 
 ## software env I develop this repo
     vsCode + platformIO
-    board: attiny85 generic
+    board: digispark-tiny
+    refer to the file `platformio.ini` for more info.
 
 ## to use this lib
     put the folder "./lib/Tiny_VL6180X" into the /lib/ folder.
-    #include "Tiny_VL6180X.h" in main.cpp
-    compile, upload and run the /src/main.cpp 
+    `#include "Tiny_VL6180X.h"` in `main.cpp`
+    compile, upload and run it.
 
 ## Dependency tree
     The dep tree and developing steps is shown below:
