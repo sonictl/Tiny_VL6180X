@@ -1,8 +1,5 @@
-# AboutMe
-    This is a Arduino library for driving the VL6180X range sensor module with the attiny85 micro control unit.
-
-# Motivations
-  In order to make the attiny85 microChip drive the VL6108X via i2c protocal, I developed this Arduino repository.
+# AboutMe & Motivations
+  This is an Arduino library for driving the VL6180X range sensor module with the [digispark-tiny board](http://digistump.com/products/1) (attiny85 microChip) via I2C protocal.
 
 # Basic notes for Atmel Attiny85
   Attiny 85 and based on whicn the digispark-tiny board is low-cost, most mini-size board that I like to use.
@@ -50,9 +47,9 @@
     ```
 
 ## More examples of code
-    refer to the "Adafruit_VL6180X" Arduino library, and modify the Adafruit into Tiny.
+    refer to the "[Adafruit_VL6180X](https://github.com/adafruit/Adafruit_VL6180X)" Arduino library, and modify the Adafruit into Tiny.
 
 # Acknowledgement
-    This repository is developed by modifying the "Adafruit_VL6180X" Arduino library.
+    This repository is developed by modifying the "[Adafruit_VL6180X](https://github.com/adafruit/Adafruit_VL6180X)" Arduino library.
     Thanks for their contribution!!
 
