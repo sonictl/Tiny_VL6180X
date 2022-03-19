@@ -33,7 +33,7 @@
  refer to the file `platformio.ini` for more info.
 
 ## to use this lib
- put the folder "./lib/Tiny_VL6180X" into the /lib/ folder.
+  put the folder "./lib/Tiny_VL6180X" and "./lib/Tiny_I2CDevice" into the /lib/ folder of your proj.
  `#include "Tiny_VL6180X.h"` in `main.cpp`
  compile, upload and run it.
 
