@@ -1,8 +1,8 @@
 # AboutMe & Motivations
   This is an Arduino library for driving the VL6180X range sensor module with the [digispark-tiny board](http://digistump.com/products/1) (attiny85 microChip) via I2C protocal.
 
-# Basic notes for Atmel Attiny85
-  Attiny 85 and based on whicn the digispark-tiny board is low-cost, most mini-size board that I like to use.
+# Basic notes about Atmel Attiny85
+  The digispark-tiny dev board based on Attiny85 chip is low-cost, most mini-size board that I like to use.
   digispark-tiny board is also named as "Digispark USB Development Board - Digistump"
   #### Specs:
  - Support for the Arduino IDE 1.0+ (OSX/Win/Linux)
@@ -21,7 +21,7 @@
  - directly use `Serial.begin();` is not supported.
 
 # How to use this library
-  
+
 ## hardware connection:
  connect the VL6108X SDA with attiny85(Pin5_of_chip = Pin0 of board)
  connect the VL6108X SCL with attiny85(Pin7_of_chip = Pin2 of board)
